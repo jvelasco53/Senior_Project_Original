@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.InfoActivities.TypesVActivity"
+    tools:showIn="@layout/activity_types_v">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:text="Variables and Types"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="315dp"
+        android:layout_height="427dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="315dp"
+            android:layout_height="500dp"
+
+            android:text="In this section, we will cover the topic variables and data types. Variables, like in math, can be used as a placeholder for something. In the case of Java, that something can be different types of data. The focus of this section will be on some of the most common data types that variables can hold: integers, Boolean, doubles, Strings, and characters.   When a variable is created, there has to be a type declaration in order for the computer to know what type of data the variable is representing. In the case of an integer, you would use int before the variable name. For instance, imagine you want to declare a variable named ‘a’, and you want it to represent a number. You would write int a; in your program. Like the rest of the types, you would need to have a [type] [variable name]; to create a variable. To initialize these variables or give them an assigned value you would use the same operation as in math, (=). The way assignment works is by reading right to left. The right-hand side of the = is the value while the left-hand side will be the declaration which will hold that value. When declaring another variable the format would look like this: [type] [variable name] = [data corresponding to the type];."
+
+            android:textSize="20dp"
+            android:visibility="visible" />
+    </ScrollView>
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="600dp" />
+
+    <Button
+        android:id="@+id/bugBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="10dp"
+        android:text="Feedback"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/typeBtnPra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="8dp"
+        android:text="practice"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
+

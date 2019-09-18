@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="register">Register</string>
+    <string name="welcome_to_javadus">Welcome to JavaDUS</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="retype_password">retype password</string>
+    <string name="title_activity_loop">LoopActivity</string>
+    <string name="title_activity_types_v">TypesVActivity</string>
+    <string name="stringPrint">
+        This section will cover the concept of printing on the console using System.out. When you want to print a particular piece of data, you would use the method System.out(). The way you would use this method is by taking the data you want to print and plug it into the method as a parameter. There are rules as to what you want to print out. For instance, if you want to print out a String like “Hello World!”, you would need to wrap the String with quotation marks like this: System.out.print(“Hello World!”). A way to bypass this would be to set a String variable equal this string and then print out the variable that holds the String that you want to print out like this:
+        <br>
+	String hello = “Hello World!”;					print:
+	System.out.print(hello);						Hello World! \n</br>
+        <br>
+Meanwhile, data types like ints, floats, and Boolean will print if you plug them into the method by themselves. For instance, say you want to print out the number 5.
+	System.out.print(5);							print:
+                                                   5 \n</br>
+        <br>
+If you want to print out multiple pieces of data that are not of the same type or if they are not numbers, you would use the + operation between the data in order to print the data. For instance you want to print out a string “This is a number “ and have an int 5 you would write:
+	System.out.print(“This is a number “ + 5);			print:
+                                                      This is a number 5 \n</br>
+        <br>
+. The reason that you would apply the + is in order to tell the method that you want both data to be printed out. Meanwhile, if you write the + with a number value, it will read it as a math operation and print out the value of the sum of both numbers you try to print out. While there is System.out.print() there also exist System.out.println(). The main difference between these two is that System.out.print() will print and continue on the same line. For instance, you want to print out “Hello” and the “ world!”, the code would look like this,
+	System.out.print(“Hello”);						print:
+	System.out.print(“ world!”);					Hello world! \n</br>
+        <br>
+System.out.println() would instead print out the data and then move to a new line. An example would be wanting to print out two sentences:
+	System.out.println(“A red bean is a cool bean.”);	print:
+	System.out.println(“All beans make you fart.”)		A red bean is a cool bean.
+                                                      All beans make you fart. \n</br>
+
+    </string>
+    <string name="commenting_string">
+        <br>
+        This section is a brief overview about commenting code and some of its significance. Writing code can be a complex task, but reading code can be just as difficult if no more so at times. On of the ways in which programmers are able to keep track of all the information that is being coded into the program, programmers add comments to help themselves and those who are also working on their code. Commenting allows coders to write a description about the methods or any line of code that they feel needs some explanation. Adding comments isn’t processed by the program as it is text that is meant for the developers and not the program itself. The way that you can comment is in two different ways. One way is by commenting a single line of code. To do this you would use the ‘/‘ character twice in order to comment out a line. Imagine you are in a company, and you are tasked to write a method that does something. While you may know all the details about how that method works, other programmers don’t necessarily know. So you would add a line of text giving a brief overview.
+        \n</br>
+        <br>
+// this is a method that takes in an int and prints out a message \n</br>
+<br>
+The flexibility of commenting is also beneficial when trying to comment out a line of code in order to debug. You might be wondering, “what if I want to leave multiple lines of text as a comment or comment out a large amount of code?”. There is a way to do that. You would use the characters /** in the beginning of the comment and close it with **/. For instance, say I want to comment a few lines:
+
+This is a small amount              				/**This is a small amount
+of lines that I would like 			=> 		  of lines that I would like
+to comment out of my code.				  to comment out of my code**/ \n</br>
+
+    </string>
+    <string name="array_string"><br>
+        The data structure Array is a collection of elements that are indexed by numbers. This data structure is a useful concept because it allows you to store data inside an ordered “list”. When in grammar school, teachers have a roll call and check to see if students are attending class. One way in which they do a roll call is by reading the names of the students in alphabetical order. Arrays work the same, except that the order in done by integers starting from 0. For instance, I can build an array that has 10 elements, and in each element, I can store data; in this case, I will store students’ names. To declare an array, you would write it out as (type) [] (array name) = new (type) [number of cells];, so in this case, I would write
+String [] students = new String [20]; This would create an array of 20 cells all starting from index 0. As a result of starting at 0, the last cell’s index will be 19 (0-19 = 20 cells). One of the disadvantages that arrays have is that they are nor dynamic in memory. This means that you can never grow or shrink the array directly. Despite that, one advantage is that arrays can have nested arrays giving it different dimensions. This concept can be related to those of a graph. In a graph you can have 2 dimensions (x and y coordinates) and 3 dimensions (x, y and z coordinates). The advantage of having nested arrays is that you can multiple dimensions past 3. \n</br>
+    </string>
+    <string name="branching_string">
+        Branching is a concept that allows you to set conditions. For instance, say that you are in a crossroad and you have two options: go to Disneyland or got to Disney World. The thought process would be to try and weigh both options. If I go to Disneyland, I get to do x, but if I go to Disney World, I can do y. This concept of if and else exist in coding. The difference is that you have 4 ways to go about decisions. You can set your first condition with an if statement. The way if statements functions are by doing the same process a person would go through. if(the conditions are met) {do this operations;}. If you want more than one condition, then the following if statements would be written as else if.<br>
+        Like a person, there are also decisions that don’t need a condition in order to execute. For instance, say you have the option of eating a donut and running as a consequence otherwise just stay seated. That otherwise would translate to else in java. So if the condition of the if statement isn’t met, then do this action.</br></string>
+    <string name="logical_string"><![CDATA[Logical operations are what help tie booleans together in order to produce an answer. The three operators are and/or/not. The and operator(&&) is used in order to compare two booleans and figure out if both booleans match up. The or operator(||) is different. This operator looks for one true boolean in order to return true. For instance, if I say true || false, I return true because I already found a true. Likewise, if I say false || true, I still get true since the condition is still met when I find that there is a true. Then there is the not operator(!). This operator changes the boolean. For instance, if I have !true it will return false. If you read it with the not it will read as NOT true which logically means false. Same applies to !false; it becomes true.\n \n Table representation of logical operators \n true && true => true \n true && false => false \n !true && true => false \n !true && false => true \n false && false => true \n true || true => true \n false || true => true \n true || false => true \n false || false => false \n !false || true => true \n !false || false => true]]></string>
+    <string name="for_string"><![CDATA[For loops are a way in order to process a command for a set number of times. For instance, if I have an array of 10, and I want to eat a burger until I count to 10, I would eat a burger and increase my count by 1. A for loop is structured as follows: for ( initialize variable; boolean condition; increment variable){ action;} For loops are great if you need to go through an array and print out each cell\'s data. For instance, if I loop through an array of students, I can print out all the students’ names. Example code/ /**String [] names = new String[“John”, “Tom”, “Sara”, “Miriam”]; for (int i = 0; i < names.length; i++){ System.out.println(names[i])); i++;}**/ Print: John Tom Sara Miriam]]></string>
+    <string name="while_string"><![CDATA[While loops are a bit different than for loops. In while loops, there is a boolean condition. Like in the English language, while will work until the condition is met. Imagine you have PE class and your gym teacher tells you to run from one end of the gym to the next. After a while, you get exhausted and ask the teacher when can you stop. The response could be “Run while until you can’t anymore”. As a result, you run until you can’t anymore. Each time you checked yourself in order to see if you could keep going, your body would say yes until it reached a point of exhaustion. The same happens with while loops in java. A condition is set and while the condition still exists, continue until the condition says to stop. When setting conditions, one must always be aware of the boundaries that the condition has to have. Without any set boundaries or a case in which there is an end to the condition, the computer will continue to loop infinitely. In order to prevent that from happening, there always has to be a condition that once met, will end the loop. Example code/ int x = 0; while ( x<5){ System.out.prinln(x); x++; } Print: 0 1 2 3 4]]></string>
+    <string name="rat_string"><![CDATA[Relational operators are used in order to compare two values. These operators are not new to many people since they are math concepts that have been taught. These operators are the less than(<), less than or equal to(<=), equal to(==), greater than(>), greater than or equal to(>=), and not equal to(!=). The two operators that you should constantly be checking in your code are the greater, less than or equal to, and the greater than or equal to. The reason is because these operators are typed differently than when written on paper. (==) uses two equal signs because we already have (=) reserved for assigning statements like variables. As a result, people make the mistake to write (==) rather than (=). For greater than or equal to and less than or equal to, you have to always remember that the equals sign goes after the inequality. These operations are great to use for things such as loops, calculations, and if statements. Emaple code/ if(5 == 6){ System.out.println(“Wrong!”); } else if (6==6){ System.out.println(“Right!”); } Print: Right!]]></string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="feed"><font size="30bp">Feedback \n</font>If there are some bugs or comments you would like to make, please send a  message in the box below. \n Thank You.   </string>
+    <string name="title_activity_all_feed">AllFeed</string>
+    <string name="title_activity_report2">Report2</string>
+</resources>

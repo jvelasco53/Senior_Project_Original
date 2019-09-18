@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.Report2"
+            android:label="@string/title_activity_report2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activities.AllFeed"
+            android:label="@string/title_activity_all_feed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.Report" />
+        <activity android:name=".Activities.Profile" />
+        <activity android:name=".Activities.InfoActivities.TypePractice3" />
+        <activity android:name=".Activities.InfoActivities.TypePractice2" />
+        <activity android:name=".Activities.InfoActivities.TypePractice1" />
+        <activity android:name=".Activities.InfoActivities.RelationPractice3" />
+        <activity android:name=".Activities.InfoActivities.RelationPractice2" />
+        <activity android:name=".Activities.InfoActivities.RelationPractice1" />
+        <activity android:name=".Activities.InfoActivities.PrintPractice3" />
+        <activity android:name=".Activities.InfoActivities.PrintPractice2" />
+        <activity android:name=".Activities.InfoActivities.PrintPractice1" />
+        <activity android:name=".Activities.InfoActivities.LoopPractice3" />
+        <activity android:name=".Activities.InfoActivities.LoopPractice2" />
+        <activity android:name=".Activities.InfoActivities.LoopPractice1" />
+        <activity android:name=".Activities.InfoActivities.LogicPractice3" />
+        <activity android:name=".Activities.InfoActivities.LogicPractice2" />
+        <activity android:name=".Activities.InfoActivities.LogicPractice1" />
+        <activity android:name=".Activities.InfoActivities.BranchPractice3" />
+        <activity android:name=".Activities.InfoActivities.BranchPractice2" />
+        <activity android:name=".Activities.InfoActivities.BranchPractice1" />
+        <activity android:name=".Activities.InfoActivities.ArrayPractice4" />
+        <activity android:name=".Activities.InfoActivities.ArrayPractice3" />
+        <activity android:name=".Activities.InfoActivities.ArrayActivity2" />
+        <activity android:name=".Activities.PracticeActivities.LoopingActivity3" />
+        <activity android:name=".Activities.PracticeActivities.LoopingActivity2" />
+        <activity android:name=".Activities.InfoActivities.LoopingActivity1" />
+        <activity android:name=".Activities.PracticeActivities.OperationActivity3" />
+        <activity android:name=".Activities.PracticeActivities.OperationActivity2" />
+        <activity android:name=".Activities.PracticeActivities.OperationActivity1" />
+        <activity android:name=".Activities.PracticeActivities.BranchingActivity3" />
+        <activity android:name=".Activities.PracticeActivities.BranchingActivity2" />
+        <activity android:name=".Activities.PracticeActivities.BranchingActivity1" />
+        <activity android:name=".Activities.InfoActivities.FeedBackActivity" />
+        <activity
+            android:name=".Activities.InfoActivities.Feedback"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.InfoActivities.ForActivity" />
+        <activity android:name=".Activities.InfoActivities.WhileActivity" />
+        <activity android:name=".Activities.InfoActivities.LogicalActivity" />
+        <activity android:name=".Activities.InfoActivities.RelationalActivity" />
+        <activity android:name=".Activities.InfoActivities.PrintActivity" />
+        <activity android:name=".Activities.InfoActivities.CommentActivity" />
+        <activity
+            android:name=".Activities.InfoActivities.TypesVActivity"
+            android:label="@string/title_activity_types_v"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.BranchingActivity" />
+        <activity android:name=".Activities.Login1Activity" />
+        <activity android:name=".Activities.LogicActivity" />
+        <activity android:name=".Activities.LoopActivity" />
+        <activity android:name=".Activities.ArrayActivity" />
+        <activity android:name=".Activities.StringActivity" />
+        <activity android:name=".Activities.mainActivity" />
+        <activity android:name=".Activities.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
